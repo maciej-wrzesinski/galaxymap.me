@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mass Effect Galaxy</title>
+    
+    <script type="text/javascript" src="./assets/js/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="./assets/js/leaflet/leaflet.js"></script>
+    <script type="text/javascript" src="./assets/js/leaflet/L.Legend.js"></script>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/js/leaflet/leaflet.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/js/leaflet/L.Legend.css"/>
+
+  </head>
+  <body>
+    <div id="map"></div>
+    
+    <div id="settings">
+      <fieldset>
+        <legend>Settings</legend>
+        <input type="checkbox" id="zoneHighlight" name="zoneHighlight">
+        <label for="zoneHighlight">Zone Highlight</label>
+        <input type="checkbox" id="zoneName" name="zoneName">
+        <label for="zoneName">Zone Name</label>
+      </fieldset>
+    </div>
+
+    <script type="text/javascript" src="./data/legends.js"></script>
+    <script type="text/javascript" src="./data/zones.js"></script>
+    <script type="text/javascript" src="./data/clusters.js"></script>
+    <script type="text/javascript" src="./data/systems.js"></script>
+    <script type="text/javascript" src="./data/styles.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,191 @@
+@font-face { 
+    font-family: MassEffect; 
+    src: url('../../assets/font/me.ttf'); 
+} 
+
+*:focus {
+    outline: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    height: 100vh;
+    background: black;
+}
+
+.leaflet-control-attribution {
+    display: none !important;
+}
+
+.zoomZones0 {
+    font-size: 9px !important;
+}
+
+.zoomZones1 {
+    font-size: 15px !important;
+}
+
+.zoomZones2 {
+    font-size: 24px !important;
+}
+
+.zoomZones3 {
+    font-size: 45px !important;
+}
+
+.zoomClusters0 {
+    font-size: 0 !important;
+}
+
+.zoomClusters1 {
+    font-size: 8px !important;
+}
+
+.zoomClusters2 {
+    font-size: 12px !important;
+}
+
+.zoomClusters3 {
+    font-size: 20px !important;
+}
+
+.leaflet-tooltip {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    font-family: MassEffect, sans-serif !important;
+    color: white !important;
+}
+.terminus_systems {
+    text-shadow: -1px -1px 0 #321915, 1px -1px 0 #321915, -1px 1px 0 #321915, 1px 1px 0 #321915;
+}
+
+.attican_traverse {
+    text-shadow: -1px -1px 0 #352554, 1px -1px 0 #352554, -1px 1px 0 #352554, 1px 1px 0 #352554;
+}
+
+.geth_space {
+    text-shadow: -1px -1px 0 #2e5167, 1px -1px 0 #2e5167, -1px 1px 0 #2e5167, 1px 1px 0 #2e5167;
+}
+
+.earth_systems_alliance_space {
+    text-shadow: -1px -1px 0 #081327, 1px -1px 0 #081327, -1px 1px 0 #081327, 1px 1px 0 #081327;
+}
+
+.inner_council_space {
+    text-shadow: -1px -1px 0 #3b0409, 1px -1px 0 #3b0409, -1px 1px 0 #3b0409, 1px 1px 0 #3b0409;
+}
+
+.outer_council_space {
+    text-shadow: -1px -1px 0 #10445a, 1px -1px 0 #10445a, -1px 1px 0 #10445a, 1px 1px 0 #10445a;
+}
+
+.batarian_hegemony {
+    text-shadow: -1px -1px 0 #392315, 1px -1px 0 #392315, -1px 1px 0 #392315, 1px 1px 0 #392315;
+}
+
+.leaflet-div-icon {
+    background: none !important;
+    border: none !important;
+}
+
+.iconTextDiv {
+    font-size: 0;
+    font-family: MassEffect, sans-serif !important;
+    color: white !important;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.iconTextDivSystems {
+    font-size: 0;
+    font-family: MassEffect, sans-serif !important;
+    color: white !important;
+    text-shadow: -1px -1px 0 #222222, 1px -1px 0 #222222, -1px 1px 0 #222222, 1px 1px 0 #222222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.displaySystemOwnerIcon {
+    position: absolute;
+}
+
+.iconTextDivSystems > ul {
+    list-style-type: none;
+}
+
+.iconTextDivSystems > ul > li {
+    min-width: 200px;
+}
+
+#settings {
+    font-family: MassEffect, sans-serif !important;
+    position: absolute;
+    height: 20vh;
+    width: 10vw;
+    background-color: wheat;
+    z-index: 9999;
+    right: 0;
+    top: 50%;
+}
+
+.leaflet-legend {
+    font-family: MassEffect, sans-serif;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    color: white;
+    background-color: rgba(50, 50, 50, 0.75) !important;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)) !important;
+    box-shadow: 0 0 5px #ffffff !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: #ffffff !important;
+}
+
+.leaflet-control-zoom > * {
+    font-family: MassEffect, sans-serif;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    color: white;
+    background-color: rgba(50, 50, 50, 0.75) !important;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)) !important;
+    box-shadow: 0 0 5px #ffffff !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: #ffffff !important;
+}
+
+.leaflet-disabled {
+    color: #999 !important;
+    text-shadow: none;
+}
+
+.leaflet-legend-toggle {
+    font-family: MassEffect, sans-serif;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    color: white;
+    background-color: rgba(50, 50, 50, 0.75) !important;
+    background-image: white !important;
+    box-shadow: 0 0 5px #ffffff !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: #ffffff !important;
+}
+
+.leaflet-legend-expanded {
+    cursor: pointer !important;
+}
+
+.leaflet-legend-toggle {
+    background-image: none !important;
+    background-color: white !important;
+    -webkit-mask:  url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTk5MDE0Mjk2NTEwIiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjE3Nzk4IiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0Ij48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwvc3R5bGU+PC9kZWZzPjxwYXRoIGQ9Ik05MzQuNCA0NzguNzJINzM3LjI4Yy0xNS44NzItMTEwLjA4LTExMS4xMDQtMTk0LjU2LTIyNS4yOC0xOTQuNTZTMzAyLjU5MiAzNjguNjQgMjg2LjcyIDQ3OC43Mkg4OS42djY2LjU2SDI4Ni43MmMxNS44NzIgMTEwLjA4IDExMS4xMDQgMTk0LjU2IDIyNS4yOCAxOTQuNTZzMjA5LjQwOC04NC40OCAyMjUuMjgtMTk0LjU2aDE5Ny4xMnYtNjYuNTZ6IiBmaWxsPSIjNzA3MDcwIiBwLWlkPSIxNzc5OSI+PC9wYXRoPjwvc3ZnPg==") no-repeat 50% 50%;
+    mask: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTk5MDE0Mjk2NTEwIiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjE3Nzk4IiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0Ij48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwvc3R5bGU+PC9kZWZzPjxwYXRoIGQ9Ik05MzQuNCA0NzguNzJINzM3LjI4Yy0xNS44NzItMTEwLjA4LTExMS4xMDQtMTk0LjU2LTIyNS4yOC0xOTQuNTZTMzAyLjU5MiAzNjguNjQgMjg2LjcyIDQ3OC43Mkg4OS42djY2LjU2SDI4Ni43MmMxNS44NzIgMTEwLjA4IDExMS4xMDQgMTk0LjU2IDIyNS4yOCAxOTQuNTZzMjA5LjQwOC04NC40OCAyMjUuMjgtMTk0LjU2aDE5Ny4xMnYtNjYuNTZ6IiBmaWxsPSIjNzA3MDcwIiBwLWlkPSIxNzc5OSI+PC9wYXRoPjwvc3ZnPg==") no-repeat 50% 50%;
+}
