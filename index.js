@@ -325,7 +325,6 @@ $('#zoneName').change(() => {
     });
 });
 
-
 L.control.Legend({
     title: "Settings",
     position: "bottomright",
